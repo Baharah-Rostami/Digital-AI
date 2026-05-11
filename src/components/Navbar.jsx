@@ -1,18 +1,26 @@
-import { useState } from "react";
-import digitalLogo from "/src/assets/digital-agency.png"
+import { useState, useContext } from "react";
 import { GrFormNextLink } from "react-icons/gr"
 import { MdClose } from "react-icons/md";
 import { AiOutlineMenuFold } from "react-icons/ai";
+import { Im500Px } from "react-icons/im";
+import images from "../Images/Images";
 import ThemeToggle from "./ThemeToggle";
+import { ThemeContext } from "../Context/themeContext";
 
-export default function Navbar({ theme, setTheme }) {
+export default function Navbar() {
   const [sideBar, setSideBar] = useState(false);
+  const { theme, setTheme } = useContext(ThemeContext);
 
   return (
-    <div className="flex justify-between items-center px-4 sm:px-12 lg:px-24 xl:px-40 py-4 sticky
-     top-0 z-20 backdrop-blur-xl font-medium bg-white/50 dark:bg-gray-900/70">
+    <div className="flex justify-between items-center px-4 sm:px-12 lg:px-24 xl:px-40 py-4
+sticky top-0 z-20 backdrop-blur-md border-b border-gray-200/20
+bg-white/70 dark:bg-black">
 
-      <img src={digitalLogo} alt="" className="w-32 sm:w-40" />
+      <img
+        src={theme === "dark" ? images.darkLogo : images.lightLogo}
+        alt="Digital AI Logo"
+        className="w-34 sm:w-40 object-contain cursor-pointer"
+      />
 
       <div className={`text-gray-700 dark:text-white sm:text-sm
        ${!sideBar ? "max-sm:w-0 overflow-hidden" : "max-sm:w-60 max-sm:pl-10"}
@@ -29,8 +37,8 @@ export default function Navbar({ theme, setTheme }) {
 
       </div>
       <div className="flex items-center gap-2 sm:gap-4">
-        <ThemeToggle theme={theme} setTheme={setTheme}/>
-         
+        <ThemeToggle />
+
         <AiOutlineMenuFold
           className="text-3xl sm:hidden cursor-pointer"
           onClick={() => setSideBar(true)}
