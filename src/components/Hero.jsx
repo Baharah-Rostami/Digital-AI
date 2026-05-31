@@ -11,7 +11,7 @@ export default function Hero() {
         
         <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-[84px] font-medium xl:leading-[95px
         max-w-5xl">
-          Turning imagination into <span className="bg-gradient-to-r from-[#5044E5] to-[#4d8cea]
+          Turning imagination into <span className="bg-linear-to-r from-[#5044E5] to-[#4d8cea]
           bg-clip-text text-transparent">digital</span> impact.</h1>
 
           <p className="text-sm sm:text-lg font-medium text-gray-500 dark:text-white/75
@@ -19,8 +19,7 @@ export default function Hero() {
 
            <div className="relative">
             <img src={images.groupDiscuss} alt="" className="w-full max-w-6xl rounded-3xl"/>
-            <img src={images.gradientImage} alt="" className="absolute top-40 -right-40 sm:-top-100
-            sm:-right-70 -z-1 dark:hidden"/>
+
            </div>
     </section>
   )
