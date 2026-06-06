@@ -15,7 +15,6 @@ import socialMedia from "/src/assets/linkedin.png"
 import DigitalAI from "/src/assets/Digital-AI.png"
 import workExplorer from "/src/assets/Worldexplorer.png"
 import nexaShop from "/src/assets/nexashop.png"
-import GoalTrack from "/src/assets/GoalTrack.png"
 
 const images = {
     profileImages,
@@ -43,5 +42,4 @@ export const LatestWorkImg ={
     DigitalAI,
     workExplorer,
     nexaShop,
-    GoalTrack
 }
