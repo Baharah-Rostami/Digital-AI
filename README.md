@@ -1,16 +1,60 @@
-# React + Vite
+# Digital AI 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern digital agency website built with React.  
+This project showcases a clean UI, responsive design, and smooth user experience for a fictional AI-powered digital agency.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌐 Live Demo
+*(Add your deployed link here if available)*  
+https://your-live-site-link.com
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📌 Features
 
-## Expanding the ESLint configuration
+- ⚡ Modern and responsive UI
+- 🎨 Clean and minimal design
+- 📱 Fully mobile-friendly layout
+- 🧭 Smooth navigation between sections
+- 🧩 Reusable React components
+- 💡 Optimized structure for scalability
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- React.js
+- JavaScript (ES6+)
+- CSS3 / Tailwind CSS (if you used it)
+- React Icons
+- Vite / Create React App (specify what you used)
+
+---
+
+## 📁 Project Structure
+
+src/
+│
+├── components/
+│ ├── Navbar
+│ ├── Hero
+│ ├── Services
+│ ├── OurWork
+│ ├── Team
+│ └── Contact
+│
+├── assets/
+├── data/
+├── App.jsx
+└── main.jsx
+
+✨ What I Learned
+Building scalable React component architecture
+Improving UI/UX design skills
+Working with reusable components
+Better project structuring for real-world apps
+
+👤 Author
+Built by Baharah Rostami
+Frontend Developer (React)
