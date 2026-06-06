@@ -6,8 +6,7 @@ This project showcases a clean UI, responsive design, and smooth user experience
 ---
 
 ## 🌐 Live Demo
-*(Add your deployed link here if available)*  
-https://your-live-site-link.com
+https://digital-ai-xi.vercel.app/
 
 ---
 
