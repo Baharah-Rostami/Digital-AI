@@ -2,7 +2,6 @@ import { useState, useContext } from "react";
 import { GrFormNextLink } from "react-icons/gr"
 import { MdClose } from "react-icons/md";
 import { AiOutlineMenuFold } from "react-icons/ai";
-import { Im500Px } from "react-icons/im";
 import images from "../Images/Images";
 import ThemeToggle from "./ThemeToggle";
 import { ThemeContext } from "../Context/themeContext";
@@ -12,9 +11,17 @@ export default function Navbar() {
   const { theme, setTheme } = useContext(ThemeContext);
 
   return (
+    <>
+     {sideBar && (
+      <div
+        className="fixed inset-0 bg-black/40 z-10 sm:hidden"
+        onClick={() => setSideBar(false)}
+      />
+    )}
+   
     <nav className="flex justify-between items-center px-4 sm:px-12 lg:px-24 xl:px-40 py-4
-sticky top-0 z-20 backdrop-blur-md border-b border-gray-200/20
-bg-white/70 dark:bg-black">
+    sticky top-0 z-20 backdrop-blur-md border-b border-gray-200/20
+  bg-white/70 dark:bg-black">
 
       <img
         src={theme === "dark" ? images.darkLogo : images.lightLogo}
@@ -27,7 +34,7 @@ bg-white/70 dark:bg-black">
        max-sm:fixed top-0 bottom-0 right-0 max-sm:min-h-screen max-sm:h-full max-sm:flex-col max-sm:bg-sky-500 
       max-sm:text-white max-sm:pt-20 flex sm:items-center gap-5 transition-all`}>
 
-        <MdClose  className="w-5 absolute right-4 top-4 sm:hidden text-gray-800 dark:text-white"
+        <MdClose className="w-5 absolute right-4 top-4 sm:hidden text-gray-800 dark:text-white"
           onClick={() => setSideBar(false)} />
 
         <a onClick={() => setSideBar(false)} href="#hero" className="sm:hover:border-b">Home</a>
@@ -49,5 +56,6 @@ bg-white/70 dark:bg-black">
           Connect <GrFormNextLink /></a>
       </div>
     </nav>
+    </>
   )
 }
