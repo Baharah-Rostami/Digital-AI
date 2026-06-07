@@ -1,4 +1,4 @@
-import profileImages from "/src/assets/profile-image.png"
+import profileImages from "/src/assets/group-people.png"
 import lightLogo from "/src/assets/light-mode-logo.png"
 import darkLogo  from "/src/assets/dark-mode-logo.png"
 import groupDiscuss from "/src/assets/group.jpg"
