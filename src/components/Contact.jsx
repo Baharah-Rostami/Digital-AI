@@ -26,6 +26,7 @@ export default function Contact() {
     }
   
   };
+  
     return (
         <div id="contact" className="flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 text-gray-700 dark:text-white dark:bg-black">
             <h2 className="text-xl sm:text-5xl font-medium">Get In Touch</h2>
